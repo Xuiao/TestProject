@@ -28,7 +28,7 @@ public class UploadFile extends PageBase {
         addPic.click();
         //in this case i have already uploaded the pic once, so the system asked should change the name and the title of the file.
         driver.findElement(By.id("ctl00_cphMain_FileUploadUgyfile")).sendKeys("C:/Users/dell/.ssh/2022-wednesday-late/src/test.png");
-        driver.findElement(By.name("ctl00$cphMain$TxtUgyfileNev")).sendKeys("This is a test for selenium");
+        driver.findElement(By.name("ctl00$cphMain$TxtUgyfileNev")).sendKeys("This is a test1 for selenium");
         stop();
 
         WebElement uploadPic = waitVisibiiltyAndFindElement(By.id("ctl00_cphMain_BtnUgyfileUpload"));
